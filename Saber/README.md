@@ -28,5 +28,5 @@ If you are developing a production application, we recommend updating the config
 
 ## Initiate the project
 
-- Use Node 16 or grater
+- Use Node 16 or greater
 - Run Npm install
