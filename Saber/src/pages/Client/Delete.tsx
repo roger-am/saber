@@ -2,7 +2,7 @@ import {Paper, Stack } from '@mui/material'
 import PageTitle from '../../components/PageTitle'
 import Form from './components/Form'
 
-interface EditProps{
+interface DeleteProps{
     startValues:{
         id: number,
         fullName:string,
@@ -12,13 +12,13 @@ interface EditProps{
     }
 }
 
-export default function Edit({startValues}:EditProps){
+export default function Delete({startValues}:DeleteProps){
     return(
         <>
             <Stack sx={{marginBottom: 2}}>
-                <PageTitle title="Edit Cliente" />
+                <PageTitle title="Excluir Cliente" />
                 <Paper>
-                    <Form startValues={startValues} editOperation={true}/>
+                    <Form startValues={startValues} editOperation={false}/>
                 </Paper>
             </Stack>
         </>
